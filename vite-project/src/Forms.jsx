@@ -52,7 +52,7 @@ const Forms = () => {
             <form onSubmit={handleSubmit}>
 
             <Container size="xs" px="xs">
-                <Title order={3}>Ecobank Inventory</Title> 
+                <Title order={3}>Ecobank IT Assets Inventory</Title> 
             </Container>
 
             <Container size="xs" px="xs">

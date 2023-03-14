@@ -1,6 +1,6 @@
-import React from 'react'
-import "./App.css"
-import Forms from './components/forms'
+import React from 'react';
+import "./App.css";
+import Forms from './Forms'
 
 const App = () => {
   return (
