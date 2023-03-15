@@ -140,6 +140,7 @@ const Forms = () => {
                             placeholder="OS Running"
                             radius="md"
                             size="md"
+                            default="ETZ"
                             value={assetDetails.OSrunning} onChange={(e) => setAssetDetails({...assetDetails, OSrunning:e.target.value})}
                         />
                     </Input.Wrapper>
