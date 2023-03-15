@@ -12,10 +12,10 @@ app.use(cors());
 
 
 const db = mysql.createConnection({
-    host:"tv0.h.filess.io",
-    user:"ecobankassets_todayknife",
-    password:"b1034079f71243b7fc00467da17b04a9a248a29a",
-    database:"ecobankassets_todayknife",
+    host:"sql7.fresqldatabase.com",
+    user:"sql7605833",
+    password:"6Yizp2qDJJ",
+    database:"sql7605833",
     port:"3306"
 })
 
