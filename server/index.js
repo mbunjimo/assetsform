@@ -15,7 +15,8 @@ const db = mysql.createConnection({
     host:"tv0.h.filess.io",
     user:"ecobankassets_todayknife",
     password:"b1034079f71243b7fc00467da17b04a9a248a29a",
-    database:"ecobankassets_todayknife"
+    database:"ecobankassets_todayknife",
+    port:"3306"
 })
 
 
