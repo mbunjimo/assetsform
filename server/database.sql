@@ -10,3 +10,8 @@ CREATE TABLE `sql7605833`.`allitems` (
     `TAGNumber` VARCHAR(255) NULL,
     `Comments` VARCHAR(255) NULL
 ) ENGINE = InnoDB;
+
+
+
+
+INSERT INTO `allitems` (`ID`, `location`, `Owner`, `Device`, `Manufacturer`, `Model`, `OSrunning`, `SerialNumber`, `TAGNumber`, `Comments`) VALUES (NULL, 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test');

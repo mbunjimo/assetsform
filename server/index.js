@@ -32,7 +32,7 @@ app.get("/", (req, res)=>{
 
 // update the database
 app.post("/Items", (req, res) => {
-    const q = "INSERT INTO allitems (`ID`,`location`, `Owner`, `Device`, `Manufacturer`, `Model`, `OSrunning`, `SerialNumber`, `TAGNumber`, `Comments`) VALUES (?)"
+    const q = "INSERT INTO `allitems` (`ID`, `location`, `Owner`, `Device`, `Manufacturer`, `Model`, `OSrunning`, `SerialNumber`, `TAGNumber`, `Comments`) VALUES (?)"
     const values = [
         null,
         req.body.location,
