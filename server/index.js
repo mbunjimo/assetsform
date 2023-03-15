@@ -27,7 +27,7 @@ app.use(express.json())
 
 
 app.get("/", (req, res)=>{
-    res.send("you have accessed the back end");
+    res.send("accessed the back end, via more query modifications");
 })
 
 // update the database

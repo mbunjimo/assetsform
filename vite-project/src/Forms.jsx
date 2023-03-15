@@ -32,10 +32,11 @@ const Forms = () => {
         // in here we are sending the data to the database
         const port = 4500 || process.env.PORT
         try{
-            await axios.post(`https://assetsformsone.onrender.com/Items`, assetDetails)
-            alert("Details senty successfully")
+           if(await axios.post(`https://assetsformsone.onrender.com/Items`, assetDetails)) {
+            alert("Details sent successfully")
             window.location.reload(true)
             setLoading(false)
+        }
         }
          catch(err){
             console.log(err)
