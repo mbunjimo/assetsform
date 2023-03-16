@@ -71,7 +71,7 @@ app.post("/Items", (req, res) => {
         req.body.TAGNumber,
         req.body.Comments
     ]
-    db.query(q, [values], (err, data) => {
+    pool.query(q, [values], (err, data) => {
         if(err) return res.json(err);
         return res.json("Item has been created successfully")
     })
