@@ -106,6 +106,7 @@ const Forms = () => {
                             <option value="KEYBOARD">KEYBOARD</option>
                             <option value="LAPTOPS">LAPTOP</option>
                             <option value="DESKPHONE">DESKPHONE</option>
+                            <option value="PRINTER">PRINTER</option>
                         </Input>
                     </Input.Wrapper>
                 </Container>
