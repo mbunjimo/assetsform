@@ -138,12 +138,13 @@ const Forms = () => {
                 <Container size="xs" px="xs" py="xs">
                     <Input.Wrapper label="OS running">
                         <Input
-                            placeholder="OS Running"
-                            radius="md"
-                            size="md"
-                            default="ETZ"
+                            component="select" rightSection={<IconChevronDown size={14} stroke={1.5} />}
                             value={assetDetails.OSrunning} onChange={(e) => setAssetDetails({...assetDetails, OSrunning:e.target.value})}
-                        />
+                        >
+                            <option value=""></option>
+                            <option value="None">None</option>
+                            <option value="Windows 10 Enterpise">Windows 10 Enterpise</option>
+                        </Input>
                     </Input.Wrapper>
                 </Container>
 
