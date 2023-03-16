@@ -11,13 +11,39 @@ app.use(cors());
 
 
 
-const db = mysql.createConnection({
+// const db = mysql.createConnection({
+//     host:"sql7.freesqldatabase.com",
+//     user:"sql7605833",
+//     password:"6Yizp2qDJJ",
+//     database:"sql7605833",
+//     port:"3306"
+// })
+
+
+
+const pool = mysql.createPool({
     host:"sql7.freesqldatabase.com",
     user:"sql7605833",
     password:"6Yizp2qDJJ",
     database:"sql7605833",
-    port:"3306"
-})
+    port:"3306",
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0,
+  });
+  
+  pool.getConnection((err, connection) => {
+    if (err) {
+      console.error('Error connecting to database:', err.stack);
+      return;
+    }
+    console.log('Connected to database as thread ID:', connection.threadId);
+    connection.release();
+  });
+  
+//   module.exports = pool;
+
+
 
 
 

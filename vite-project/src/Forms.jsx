@@ -25,23 +25,23 @@ const Forms = () => {
      const [loading, setLoading] = useState(false)
 
      const handleSubmit = async (e) => {
-        setLoading(true)
+        setLoading(true);
         e.preventDefault();
-        console.log(assetDetails)
-
-        // in here we are sending the data to the database
-        const port = 4500 || process.env.PORT
-        try{
-           if(await axios.post(`https://assetsformsone.onrender.com/Items`, assetDetails)) {
-            alert("Details sent successfully")
-            window.location.reload(true)
-            setLoading(false)
+        console.log(assetDetails);
+      
+        try {
+          const response = await axios.post(`https://assetsformsone.onrender.com/Items`, assetDetails);
+          if (response.status >= 200 && response.status < 300) {
+            alert("Details sent successfully");
+            window.location.reload(true);
+            setLoading(false);
+          } else {
+            console.log(`Server returned status code ${response.status}: ${response.statusText}`);
+          }
+        } catch (err) {
+          console.log(err);
         }
-        }
-         catch(err){
-            console.log(err)
-        }
-      }
+      };
 
 
 
