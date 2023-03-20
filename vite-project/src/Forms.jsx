@@ -2,8 +2,9 @@ import React, {useState} from 'react';
 import { Container } from '@mantine/core';
 import { Input } from '@mantine/core';
 import { IconChevronDown } from '@tabler/icons-react';
-import { Title, Button } from '@mantine/core';
+import { Title, Button, Image} from '@mantine/core';
 import axios from "axios";
+import {ecobankIcon} from './assets';
 
 
 const Forms = () => {
@@ -53,7 +54,8 @@ const Forms = () => {
             <form onSubmit={handleSubmit}>
 
             <Container size="xs" px="xs">
-                <Title order={3}>Ecobank IT Assets Inventory</Title> 
+                <Image width={120} height={80} mx="auto"  radius="md" src={ecobankIcon} />
+                <Title order={3} mx="auto">Ecobank IT Assets Inventory</Title> 
             </Container>
 
             <Container size="xs" px="xs">
@@ -107,6 +109,9 @@ const Forms = () => {
                             <option value="LAPTOPS">LAPTOP</option>
                             <option value="DESKPHONE">DESKPHONE</option>
                             <option value="PRINTER">PRINTER</option>
+                            <option value="SCANNERS">SCANNERS</option>
+                            <option value="SECURITY SWITCHES">SECURITY SWITCHES</option>
+                            <option value="PIN POS">PIN POS</option>
                         </Input>
                     </Input.Wrapper>
                 </Container>
@@ -121,6 +126,10 @@ const Forms = () => {
                             <option value="HP">HP</option>
                             <option value="CISCO">CISCO</option>
                             <option value="EPSON">EPSON</option>
+                            <option value="HIK VISION">HIK VISION</option>
+                            <option value="VERIFONE">VERIFONE</option>
+                            <option value="SAMSUNG">SAMSUNG</option>
+                            <option value="THOMSON REUTERS">THOMSON REUTERS</option>
                         </Input>
                     </Input.Wrapper>
                 </Container>
