@@ -22,10 +22,10 @@ app.use(cors());
 
 
 const pool = mysql.createPool({
-    host:"sql7.freesqldatabase.com",
-    user:"sql7605833",
-    password:"6Yizp2qDJJ",
-    database:"sql7605833",
+    host:"sql9.freesqldatabase.com",
+    user:"sql9607753",
+    password:"cbq1f8kkB9",
+    database:"sql9607753",
     port:"3306",
     waitForConnections: true,
     connectionLimit: 10,
